@@ -578,38 +578,7 @@ a {
   color: rgb(109, 109, 109);
 }
 
-.about .desc img {
-  width: 95%;
-  height: 90%;
-  margin-top: 2rem;
-}
 
-.about-main .about .legacy {
-  width: 9.5rem;
-  height: 16rem;
-  border: 5px solid red;
-  position: absolute;
-  bottom: 28rem;
-  left: 20rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.about-main .about .legacy .thirty {
-  color: white;
-  font-size: 6rem;
-}
-
-.about-main .about .legacy .years {
-  color: white;
-  font-size: 2rem;
-}
-
-.about-main .about .legacy .of-legacy {
-  color: white;
-  font-size: 1.2rem;
-}
 
 .top-cities {
   display: flex;
@@ -620,6 +589,52 @@ a {
 
   margin-top: 2%;
 }
+
+.legacy{
+  position: relative;
+ 
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 2rem;
+  
+}
+
+.legacy img{
+  width: 70rem;
+  
+  height: 30rem;
+}
+
+.legacy .content{
+  width: 9rem;
+  position: absolute;
+  top: 18rem;
+  left: 12rem;
+  display: flex;
+  align-items: center;
+
+
+  flex-direction: column;
+  height: 15rem;
+  border: 5px solid red;
+  
+}
+
+.legacy .content .thirty{
+  color: white;
+  font-size: 6.5rem;
+}
+.legacy .content .years{
+  color: white;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+.legacy .content .of-legacy{
+  color: white;
+  font-size: 1.1rem
+}
+
 
 .about-main .about .top-cities .top {
   color: red;
@@ -673,6 +688,67 @@ a {
     background: rgb(255, 204, 199);
   }
 
+  .legacy{
+    
+  
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 100%;
+    height: 15rem;
+    border: 2px solid;
+  }
+
+  .legacy .image{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .legacy .image img{
+    width: 50rem;
+    display: block;
+    height: 25rem;
+    
+    bottom: -7rem;
+    z-index: 1;
+  }
+
+  .legacy .content{
+    width: 5rem;
+    height: 2rem;
+    
+   z-index: 2;
+    display: flex;
+    align-items: center;
+  top: 6rem;
+  left: 3rem;
+  display: none;
+    flex-direction: column;
+    height: 10rem;
+    border: 3px solid red;
+    
+  }
+  
+  .legacy .content .thirty{
+    color: white;
+    font-size: 3.5rem;
+  }
+  .legacy .content .years{
+    color: white;
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+  .legacy .content .of-legacy{
+    color: white;
+    font-size: 1.1rem
+  }
+
   .about {
     z-index: 2;
     position: relative;
@@ -694,10 +770,11 @@ a {
   .about h1 {
     width: 100%;
     font-size: 2rem;
+    height: 1px;
     color: rgb(0, 0, 0);
   }
   .about .desc {
-    margin-top: 2rem;
+    
     color: rgb(0, 0, 0);
     font-weight: 400;
     line-height: 1.5rem;
@@ -715,38 +792,7 @@ a {
     color: rgb(109, 109, 109);
   }
 
-  .about .desc img {
-    width: 20rem;
-    height: 10rem;
-    margin-top: 2rem;
-  }
-
-  .about-main .about .legacy {
-    width: 9.5rem;
-    height: 16rem;
-    border: 5px solid red;
-    position: absolute;
-    bottom: 28rem;
-    left: 20rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .about-main .about .legacy .thirty {
-    color: white;
-    font-size: 6rem;
-  }
-
-  .about-main .about .legacy .years {
-    color: white;
-    font-size: 2rem;
-  }
-
-  .about-main .about .legacy .of-legacy {
-    color: white;
-    font-size: 1.2rem;
-  }
+  
 
   .top-cities {
     display: none;
@@ -816,6 +862,68 @@ a {
     display: none;
   }
 
+  .legacy{
+    
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 100%;
+    height: 20rem;
+    border: 2px solid;
+  }
+
+  .legacy .image{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .legacy .image img{
+    width: 100%;
+    display: block;
+    height: 20rem;
+    position: absolute;
+   
+    z-index: 1;
+  }
+
+  .legacy .content{
+    width: 5rem;
+    height: 2rem;
+    
+   z-index: 2;
+    display: flex;
+    align-items: center;
+  top: 6rem;
+  left: 3rem;
+  display: none;
+    flex-direction: column;
+    height: 10rem;
+    border: 3px solid red;
+    
+  }
+  
+  .legacy .content .thirty{
+    color: white;
+    font-size: 3.5rem;
+  }
+  .legacy .content .years{
+    color: white;
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+  .legacy .content .of-legacy{
+    color: white;
+    font-size: 1.1rem
+  }
+}
+
   .about {
     z-index: 2;
     position: relative;
@@ -829,11 +937,135 @@ a {
     background: white;
     border-radius: 2rem;
   }
+
+
+@media (min-width: 992px) and (max-width: 1199.98px){
+  .legacy{
+    
+  
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 100%;
+    height: 25rem;
+    border: 2px solid;
+  }
+
+  .legacy .image{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .legacy .image img{
+    width: 100%;
+    display: block;
+    height: 100%;
+    
+    bottom: -7rem;
+    z-index: 1;
+  }
+
+  .legacy .content{
+    width: 5rem;
+    height: 2rem;
+    
+   z-index: 2;
+    display: flex;
+    align-items: center;
+  top: 6rem;
+  left: 3rem;
+  display: none;
+    flex-direction: column;
+    height: 10rem;
+    border: 3px solid red;
+    
+  }
+  
+  .legacy .content .thirty{
+    color: white;
+    font-size: 3.5rem;
+  }
+  .legacy .content .years{
+    color: white;
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+  .legacy .content .of-legacy{
+    color: white;
+    font-size: 1.1rem
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   .top-cities {
     display: none;
+  }
+
+  .legacy{
+    
+  
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 100%;
+    height: 15rem;
+    border: 2px solid;
+  }
+
+  .legacy .image{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .legacy .image img{
+    width: 50rem;
+    display: block;
+    height: 25rem;
+    
+    bottom: -7rem;
+    z-index: 1;
+  }
+
+  .legacy .content{
+    width: 5rem;
+    height: 2rem;
+    
+   z-index: 2;
+    display: flex;
+    align-items: center;
+  top: 6rem;
+  left: 3rem;
+  display: none;
+    flex-direction: column;
+    height: 10rem;
+    border: 3px solid red;
+    
+  }
+  
+  .legacy .content .thirty{
+    color: white;
+    font-size: 3.5rem;
+  }
+  .legacy .content .years{
+    color: white;
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+  .legacy .content .of-legacy{
+    color: white;
+    font-size: 1.1rem
   }
 
   .about {
@@ -1008,7 +1240,7 @@ a {
 
 .project-main .view-more p {
   margin-top: 5rem;
-  font-size: 20px;
+  font-size: 16px;
   color: black;
 }
 
@@ -1410,21 +1642,27 @@ textarea::placeholder{
   outline: none;
   border: none;
   font-size: 1.2rem;
- width: 25%;
-  border-radius: none;
+ width: 45%;
+cursor: pointer;
+  border-radius: 10px;
+
   padding-top: 0.4rem;
   padding-bottom: 0.4rem;
   display: flex;
   align-items: center;
   justify-content: center;
+
+gap: 0.2rem;
   font-weight: 600;
-  
+  border: 2px solid;
+  padding: 2px 2px;
   
 }
 
 .new-contact .form-div button:hover{
-  background-color: rgb(255, 177, 177);
-  transition: all ease 0.4s;    
+  background-color: rgb(223, 223, 223);
+  transition: all ease 0.4s;  
+  color:rgb(0, 0, 0);  
 }
 
 .contact--sub-heading{
@@ -1736,8 +1974,12 @@ textarea::placeholder{
     
   }
 
+  .address .address-content h2{
+    font-size: 30px;
+  }
+
   .address .address-content p{
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 400;
     letter-spacing: 2px;
     text-align: center;
